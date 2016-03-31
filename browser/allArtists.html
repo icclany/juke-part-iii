@@ -1,0 +1,27 @@
+<!-- <div ng-show="showMe">
+  <h3>Artists</h3>
+  <div class="row">
+    <div ng-repeat="artist in artists" class="col-xs-4">
+      <a class="thumbnail" ng-click="viewOneArtist(artist)" href="#">
+        <img ng-src="">
+        <div class="caption">
+          <h5>
+                  <span></span>
+                </h5>
+          <small> songs</small>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+ -->
+
+ <!-- <div ng-show="showMe"> -->
+ <div ng-show="true">
+          <h3>Artists</h3>
+            <div class="list-group">
+              <div class="list-group-item" ng-repeat="artist in artists">
+              <a ui-sref="artist({artistid: artist._id})">{{ artist.name }}</a>
+            </div>
+          </div>
+        </div>
